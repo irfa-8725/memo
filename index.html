@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="clock-container">
+        <div id="time">10:30:45 PM</div>
+        <div id="date">Sunday, 5 October 2025</div>
+    </div>
+
+    <div id="password-container" class="hidden">
+        <div class="password-box">
+            <h3>Enter Secret Code</h3>
+            <input type="password" id="password-input" placeholder="****">
+            <button id="submit-password">Enter Gallery</button>
+            <p id="error-message" class="hidden">Incorrect Password</p>
+        </div>
+    </div>
+
+    <div id="gallery-container" class="hidden">
+        <img src="photo1.jpg" alt="My secret photo 1" class="gallery-image">
+        <img src="photo2.jpg" alt="My secret photo 2" class="gallery-image">
+        <img src="photo3.jpg" alt="My secret photo 3" class="gallery-image">
+        <img src="photo4.jpg" alt="My secret photo 4" class="gallery-image">
+        <img src="photo5.jpg" alt="My secret photo 5" class="gallery-image">
+        <img src="photo6.jpg" alt="My secret photo 6" class="gallery-image">
+        <img src="photo7.jpg" alt="My secret photo 7" class="gallery-image">
+    </div>
+
+    <div id="image-modal" class="hidden">
+        <span id="close-modal">&times;</span>
+        <img id="modal-content">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
